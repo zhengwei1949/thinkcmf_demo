@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	margin:0;
+	padding:0;
+	font-size:12px;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+body
+{
+	background-color:#f5f5f5;
+}
+
+.top
+{
+	width:100%;
+	height:27px;
+	background:url(../images/top_bg.jpg) repeat-x;/*水平重复*/
+}
+
+.top_content
+{
+	width:1000px;
+	margin:0 auto;/*在页面中居中*/
+	line-height:27px;
+}
+
+.top_content li/*定义top_content下的li标记*/
+{
+	list-style-image:url(../images/li_bg.gif);/*设置li标签的标志*/
+	float:right;/*让li标签水平呈现*/
+	width:70px;
+	line-height:27px;/*让字体垂直居中*/
+}
+
+.top_content a:link,top_content a:visited/*超链接访问前的状态和访问后的状态*/
+{
+	color:#8E8E8E;
+	text-decoration:none;/*去掉下划线*/
+}
+
+.top_content a:hover,.top_content a:active/*鼠标经过的状态,按下鼠标之后的状态*/
+{
+	color:#900;
+	text-decoration:none;
+}
+
+
+.wrap
+{
+	width:1000px;
+	margin:0 auto;
+}
+
+.logo
+{
+	height:80px;
+	background-color:#fff;
+	margin:0 auto;
+}
+
+.logo_left/*慕课网图标*/
+{
+	width:200px;
+	display:inline-block;
+}
+
+.logo_right/*电话图标*/
+{
+	width:300px;
+	float:right;
+	height:28px;
+	margin-top:30px;
+	color:#8E8E8E;
+}
+
+.logo_right img/*控制电话图片和文字中间对齐*/
+{
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.tel/*改变电话的字样*/
+{
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#C00;
+}
+
+.nav
+{
+	height:40px;
+}
+
+.nav_left
+{
+	width:10px;
+	background:url(../images/nav_left.jpg) no-repeat;
+}
+
+.nav_mid
+{
+	width:980px;
+	background:url(../images/nav_bg.jpg) repeat-x;
+}
+
+.nav_right
+{
+	width:10px;
+	background:url(../images/nav_right.jpg) no-repeat;
+}
+
+.nav_left,.nav_mid,.nav_right
+{
+	float:left;
+	height:40px;
+}
+
+.nav_mid_left,.nav_mid_right
+{
+	float:left;
+}
+
+.nav_mid_left
+{
+	width:680px;
+}
+.nav_mid_right
+{
+	width:300px;
+}
+.nav_mid_left li
+{
+	float:left;
+	list-style-type:none;
+	width:100px;
+	text-align:center;
+	line-height:40px;/*使文字居中的技巧*/
+	}
+
+.nav_mid_left a:link,.nav_mid_left a:visited/*超链接访问前的状态和访问后的状态*/
+{
+	color:#fff;
+	text-decoration:none;/*去掉下划线*/
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+
+.nav_mid_left a:hover,.nav_mid_left a:active/*鼠标经过的状态,按下鼠标之后的状态*/
+{
+	color:#ff0;
+	text-decoration:none;
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+
+.search_text
+{
+	width:190px;
+	height:25px;
+	margin-top:5px;
+	background:url(../images/search.jpg) no-repeat right center; 
+	background-color:#fff;
+	padding-right:25px;/*不会输入到图片上*/
+	border:1px solid #fff;
+}
+
+.ad
+{
+	height:310px;
+	overflow:hidden;
+}
+
+.main{
+	height:250px;
+	background-color:#fff;
+	margin-top:5px;
+}
+
+.news
+{
+	width:340px;
+	border:1px solid #E8E8E8;
+}
+
+.course
+{
+	width:410px;
+	border:1px solid #e8e8e8;
+	background-color:#fff;
+	margin:0 7px;
+}
+.sidebar
+{
+	width:230px;
+	background-color:#fff;
+}
+
+.news,.course,.sidebar
+{
+	height:250px;
+	float:left;
+}
+
+.title
+{
+	height:35px;
+	border-bottom:2px solid #e8e8e8;/*新闻中心有2px的下边框*/
+}
+.title_left
+{
+	width:60%;
+	font-family:"微软雅黑";
+	font-size:14px;
+	font-weight:bold;/*加粗*/
+	color:#786F66;
+	line-height:35px;/*垂直居中*/
+	padding-left:20px;
+	float:left;
+}
+.title_right
+{
+	width:20%;
+	line-height:35px;
+	float:right;
+	text-align:right;
+	padding-right:10px;
+}
+.title_right a
+{
+	text-decoration:none;
+	color:#999999;
+}
+
+.pic_news
+{
+	height:80px;
+	margin-top:10px;
+	line-height:22px;
+}
+.pic_news img,.course_pic img
+{
+	float:left;
+	margin:0 5px;
+}
+.pic_news a,.course_pic a
+{
+	text-decoration:none;
+	color:#C00;
+}
+
+.news_list
+{
+	margin-top:20px;
+}
+.news_list li
+{
+	list-style-type:none;
+	background:url(../images/list.jpg) no-repeat;
+	padding-left:10px;
+	margin:8px;
+	border-bottom:1px dotted #CCC
+}
+.news_list a:link,.news_list a:visited
+{
+	text-decoration:none;
+	color:#000;
+}
+.news_list a:hover,.news_list a:active/*hover鼠标经过*/
+{
+	text-decoration:none;
+	color:#C00;
+}
+.date
+{
+	color:#999;
+	float:right;
+}
+
+.course_pic
+{
+	height:120px;
+	margin-top:10px;
+	line-height:22px;
+}
+.course_type
+{
+	height:37px;
+	width:372px;
+	background:url(../images/product_type_bg.jpg) no-repeat;
+	margin:20px auto;
+}
+.course_type li
+{
+	list-style-type:none;
+	float:left;
+	line-height:37px;
+	width:85px;
+	text-align:center;
+}
+
+.video{
+	height:185px;
+	border:1px solid #E8E8E8;
+}
+
+.video_content
+{
+	height:150px;
+}
+
+.sidebar_ad
+{
+	height:55px;
+	border:1px solid #e8e8e8;
+	margin-top:10px;
+}
+
+.copyright
+{
+	width:100%;
+	height:200px;
+	background-color:#e8e8e8;
+	margin-top:10px;
+	clear:both;/*清除它的左右浮动，解决新闻内容过长，内容溢出的问题*/
+}
+.copyright_content
+{
+	width:1000px;
+	height:200px;
+	margin:0 auto;
+	padding-top:20px;
+}
+
+.copyright_content a
+{
+	font-size:18px;
+	text-decoration:none;
+	color:#999;
+}
+
+.copyright_content li
+{
+	list-style-type:none;
+	font-size:14px;
+	font-family:"微软雅黑";
+	text-decoration:none;
+	text-align:center;/*让文字居中显示*/
+	color:#999;
+	float:left;/*列表上水平方向排列*/
+	width:200px;
+	line-height:30px;
+	background:url(../images/line.png) no-repeat right center;/*设置水平分割线 水平靠右*/
+}
+
+
+.list_main
+{
+	min-height:350px;
+	_height:350px;//解决ie8和ie6兼容的问题
+	background-color:#FFF;
+	margin-top:10px;
+}
+.news_type
+{
+	width:220px;
+	height:350px;
+	border:1px solid #e8e8e8;
+	float:left;
+}
+.list_box
+{
+	width:770px;
+	min-height:350px;/*解决新闻内容过长，内容溢出的问题  min-height在IE6中不支持 要用css _height解决*/
+	border:1px solid #e8e8e8;
+	float:right;
+	background-color:#fff;
+}
+
+.news_type h2
+{
+	height:35px;
+	line-height:35px;
+	margin-top:15px;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#666;
+	background:url(../images/titile_bg.gif) repeat-x;
+	padding-left:20px;
+}
+.news_type_content
+{
+	height:365px;
+	background:url(../images/content_bg.gif) repeat-x;
+}
+.news_type_content li
+{
+	list-style-type:none;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;
+}
+.news_type_content li a
+{
+	color:#666;
+	text-decoration:none;
+	background:url(../images/li_bg.gif) no-repeat left center;/*使图标水平靠左 垂直居中*/
+	padding-left:15px;
+	display:block;/*改变li的背景颜色 要将li这个内联元素变为块状元素*/
+}
+.news_type_content li a:hover/*鼠标移过时图标变 字体颜色变 背景图片变*/
+{
+	color:#009CDF;
+	background:url(../images/li_bg2.gif) no-repeat left center;
+	background-color:#F2F2F2;
+}
+.list_box h2
+{
+	height:35px;
+	line-height:35px;
+	margin-top:15px;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#666;
+	background:url(../images/type_bg.png) repeat-x;
+	padding-left:20px;
+}
+
+.page/*新闻页码*/
+{
+	height:40px;
+	margin-top:10px;
+	text-align:center;
+}
+.page a
+{
+	display:inline-block;
+	border:1px solid #e8e8e8;
+	text-decoration:none;
+	margin:5px;
+	padding:5px 10px;
+}
+.page a:link,.page a:visited/*超链接初始状态以及访问过之后的状态*/
+{
+	color:#000;
+}
+.page a:hover,.page a:active/*超链接经过的状态和访问之后的状态*/
+{
+	color:#fff;
+	background-color:#cc1b1b;/*鼠标经过改变背景颜色*/
+}
+
+/*新闻详细页制作*/
+.list_box h1/*新闻详细页标题*/
+{
+	font-family:"微软雅黑";
+	font-size:20px;
+	color:#000;
+	text-align:center;
+	margin:10px 0;
+}
+.list_box_newsInfo
+{
+	color:#666;
+	text-align:center;
+	font-size:12px;
+	font-family:"微软雅黑";
+	border-bottom:1px dotted #666;/*新闻标题下划线*/
+}
+.list_box_newsContent
+{
+	font-size:14px;
+	padding:20px;
+	line-height:25px;
+	text-indent:2em;/*首行缩进2em*/
+}
+/*分页*/
+.pagination{
+	text-align: right;
+}
+.pagination li{
+	list-style: none;
+	text-align: center;
+	padding:0px 8px;
+	border:1px solid gray;
+	margin-right:10px;
+	color: #222;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+.pagination li a{
+	text-decoration: none;
+	color: #222;
+	display: inline-block;
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+}
+.pagination li:hover{
+	background:rgb(206, 192, 192);
+	color: #fff;
+}
+.pagination li:hover a{
+	color: #fff;
+}
